@@ -1,25 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+
+ }
 body {
     font-family: "Rubik", sans-serif;
 }
+.container {
+    max-width: 1200px;
+    margin:  0 auto;
+}
+
 .header {
     display: flex;
     align-items: center;
-    position: relative;
+    min-height: 80vh;
     background-color: #F5F5F5;
-    padding: 20px;
+    padding: 70px 0;
 }
+
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .logo {
     font-size: 25px;
     color: #111111;
-    justify-content: left;
     text-transform: uppercase;
     font-weight: 800;
 }
+
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 20px;
+    color: #111111;
+    display: block;
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icono {
+    width: 25px;
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+.submenu {
+    position: relative;
+}
+
+.submenu #carrito {
+    display: none; 
+}
+
+.submenu:hover #carrito {
+    display: block;
+    position: absolute;
+    right: 0;
+    backdrop-filter: blur(10px);
+    top: 100%;
+    z-index: 1;
+    background-color: #4E4B5076;
+    padding: 20px;
+    min-width: 400px;
+}
+
 .image{
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 10px;
+}
+.main{
+    margin-left: 5%;
 }
 .table{
     width: 100%;
@@ -33,21 +104,12 @@ body {
     padding: 10px;
     border-bottom: 1px solid #ddd;
 }
-.navbar ul{
-    display: flex;
-    justify-content: center;
-    margin-left: 70%;
-}
-.navbar ul li {
-    display: flex;
-    margin-left: 100px;
-    float: left;
-    color: #000;
-
-}
-
-.navbar ul li a {
-    font-size: 18px;
-    color: #111111;
-    display: block;
+.button{
+    background-color: #111111;
+    border-radius: 10%;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: 800;
+    cursor: pointer; 
 }
