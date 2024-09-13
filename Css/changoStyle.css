@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -35,8 +37,7 @@ body {
     font-size: 25px;
     color: #111111;
     text-transform: uppercase;
-    font-weight: 800;
-    
+    font-weight: 800;   
 }
 
 .menu .navbar ul li {
