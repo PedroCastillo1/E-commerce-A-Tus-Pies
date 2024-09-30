@@ -33,9 +33,10 @@ img {
 .header {
     display: flex;
     align-items: center;
-    min-height: 80vh;
+    min-height: 70vh;
     background-color: #F5F5F5;
     padding: 70px 0;
+    margin-bottom: 20px;
 }
 
 .menu {
@@ -80,6 +81,8 @@ img {
     display: none;
 }
 
+/*#################################################*/
+/*
 .submenu {
     position: relative;
 }
@@ -99,13 +102,14 @@ img {
     padding: 20px;
     min-width: 400px;
 }
-
+*/
+/*##########################################################*/
 table {
     width: 100%;
 }
 
 th, td {
-    color: #FFFFFF;
+    color: #ff1111;
 }
 
 .borrar {
@@ -163,8 +167,75 @@ th, td {
 }
 /*Aca finaliza el estilo de las ofertas especiales */
 
+/* ACA COMIENZA EL NUEVO CONTENEDOR DE PRODUCTOS FAVORITOS */
+.contenedor-productos {
+    max-width: 1200px;
+    margin: 0 auto; /* Centra el contenedor en la página */
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Sombra suave */
+    margin-bottom: 20px;
+  }
+  .contenedor-productos h2 {
+    font-family: "EB Garamond", serif;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+    font-size: 3em;
+  }
+  .productos-favoritos {
+    display: flex;
+    justify-content: space-between;
+  }
+  .producto {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    text-align: center;
+    width: 30%;
+    transition: transform 0.3s ease;
+  }
+  .producto img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+  }
+  .producto h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #333;
+    font-family: "Rubik", sans-serif;
+  }
+  .producto p {
+    color: #666;
+    font-size: 1em;
+    margin-bottom: 15px;
+    font-family: "Rubik", sans-serif;
+  }
+  .producto .btn-mas-info {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  .producto .btn-mas-info:hover {
+    background-color: #0056b3;
+  }
+  .producto:hover {
+    transform: translateY(-10px);
+  }
+/* ACA FINALIZA EL NUEVO CONTENEDOR DE PRODUCTOS FAVORITOS */
+/*#######################################################################################################*/
+    /*ESTE ES EL VIEJO OFERTAS DE CONTENIDO QUE FUE REMPLAZADO POR PRODUCTOS FAVORITOS*/
 /*Aca empieza el estilo de las ofertas de contenido */
-
+/*
 .ofert {
     padding: 20px 0 0 0;
     display: flex;
@@ -209,31 +280,71 @@ th, td {
     border-radius: 5px;
     font-size: 15px;
 }
+*/
 /*Aca finaliza el estilo de las ofertas de contenido */
-
-/*Aca comienza el estilo de los productos */
-.products {
-    padding: 50px 0;
-    text-align: center;
-}
-
-.products h2 {
-    color: #111111;
-    font-family: "EB Garamond", serif;
-    font-size: 50px;
-    text-transform: uppercase;
-    margin-bottom: 50px;
-}
-
-.product-content {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 50px;
-}
-/*Aca finaliza el estilo de los productos */
-
-/*Aca comienza el estilo de los otros productos */
-
+/*#######################################################################################################*/
+.contenedor-main {
+    max-width: 95%; /* Abarca casi todo el ancho de la página */
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #ffffff; /* Color cremita */
+    border-radius: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  }
+  .contenedor-main h2 {
+    text-align: left; /* Alineado a la izquierda */
+    color: #333;
+    font-size: 3em;
+    margin-bottom: 15px;
+    font-family: 'Playfair Display', serif; /* Tipografía elegante para el título */
+  }
+  /* Contenedor de información */
+  .contenedor-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+  }
+  /* Estilos para los textos explicativos */
+  .info-textos {
+    width: 60%; /* Ajuste del ancho del texto */
+  }
+  .info-textos h3 {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 10px;
+    font-family: 'Playfair Display', serif; /* Tipografía elegante */
+  }
+  .info-textos p {
+    color: #666;
+    font-size: 1.1em;
+    margin-bottom: 15px;
+    line-height: 1.6;
+    font-family: 'Georgia', serif; /* Tipografía elegante */
+  }
+  /* Estilo para la imagen */
+  .info-imagen {
+    width: 35%; /* Ajuste del ancho de la imagen */
+  }
+  .info-imagen img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Sombra destacada */
+    object-fit: cover; /* Asegura que la imagen se ajuste correctamente */
+  }
+  @media screen and (max-width: 768px) {
+    .contenedor-info {
+      flex-direction: column;
+    }
+    .info-textos, .info-imagen {
+      width: 100%;
+    }
+  }
+    /*ESTE ES EL VIEJO OFERTAS DE CONTENIDO QUE FUE REMPLAZADO POR PRODUCTOS FAVORITOS*/
+/*#######################################################################################################*/
+    /*ESTE ES EL VIEJO MAIN DE PRODUCTOS QUE SE VA A MUDAR A LA PAGINA DE PRODUCTOS*/
+/*
 .product {
     text-align: center;
     padding: 30px;
@@ -263,9 +374,11 @@ th, td {
 .precio{
     font-weight: 800;  
 }
-
-
+*/
 /*Aca finaliza el estilo de los otros productos */
+        /*ESTE ES EL VIEJO MAIN DE PRODUCTOS QUE SE VA A MUDAR A LA PAGINA DE PRODUCTOS*/
+/*#######################################################################################################*/
+
 
 /*Aca comienza el estilo de los iconos */
 

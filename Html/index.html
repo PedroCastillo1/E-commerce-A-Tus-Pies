@@ -5,15 +5,15 @@
     <meta http-equiv="x-UA-Compatible" content="IE-edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>A tus pies</title>
-    <link rel="stylesheet" href="../Css/Style.css">
+    <link rel="stylesheet" href="../Css/InicioStyle.css">
 </head>
 <body>
     <header class="header">
         <div class="menu container">
-            <a href="#" class="logo">A tus Pies</a>
+            <a href="index.html" class="logo">A tus Pies</a>
             <input type="checkbox" id="menu"/>
             <label for="menu">
-                <img src="../img/img_logo/menu.png" class="menu-icono" alt="menu">
+                <img src="../img/Iconos/Menu_barritas.png" class="menu-icono" alt="menu"> 
             </label>
             <nav class="navbar">
                 <ul>
@@ -26,7 +26,11 @@
             <div>
                 <ul>
                     <li class="submenu">
-                        <img src="../img/img_logo/car.svg" id="img-carrito" alt="carrito">
+                        <img src="../img/Iconos/Carrito_Compras.png" id="img-carrito" alt="carrito">
+                    </li>
+                    <!-- ACA ESTOY SACANDO EL SUBMENU DEL CARRITO
+                    <li class="submenu">
+                        <img src="../img/Iconos/Carrito_Compras.png" id="img-carrito" alt="carrito">
                         <div id="carrito">
                             <table id="lista-carrito">
                                 <thead>
@@ -42,6 +46,7 @@
                             <a href="#" id="vaciar-carrito" class="btn-2">vaciar carrito</a>
                         </div>
                     </li>
+                    -->
                 </ul>
             </div>
         </div>
@@ -53,12 +58,41 @@
             <div class="header-txt">
                 <h1>Ofertas especiales</h1>
                 <p>Estrena las mejores alfombras</p>
-                <a href="#" class="btn-1">informacion</a>
+                <a href="#" class="btn-1">información</a>
             </div>
         </div>
 
     </header>
+    <!-- ESTA ES LA NUEVA SECTION DE PRODUCTOS FAVORITOS -->
+    <div class="contenedor-productos">
+        <h2>Productos Favoritos</h2>
+        <section class="productos-favoritos">
+          <div class="producto">
+            <img src="/img/Alfombras-interiores/Alfombra-de-Corazones.jpg" alt="Producto 1">
+            <h3>Alfombra Moderna</h3>
+            <p>Una alfombra con diseño moderno y elegante.</p>
+            <a href="#" class="btn-mas-info">Más Información</a>
+          </div>
+    
+          <div class="producto">
+            <img src="/img/Modelos-Abstractos/Alfombra-Pelota-Basquet.jpg" alt="Producto 2">
+            <h3>Alfombra Clásica</h3>
+            <p>Estilo clásico que nunca pasa de moda.</p>
+            <a href="#" class="btn-mas-info">Más Información</a>
+          </div>
+    
+          <div class="producto">
+            <img src="/img/Alfombras-interiores/Alfombra-Hoja.jpg" alt="Producto 3">
+            <h3>Alfombra Bohemia</h3>
+            <p>Un toque bohemio y artesanal para tu hogar.</p>
+            <a href="#" class="btn-mas-info">Más Información</a>
+          </div>
+        </section>
+    </div>
+      <!-- ESTA ES LA NUEVA SECTION DE PRODUCTOS FAVORITOS -->
 
+
+    <!-- ACA ESTOY SACANDO EL VIEJO CONTENEDOR DE OFERTA Y CREE UNO NUEVO QUE SEA DE PRODUCTOS FAVORITOS
     <section class="ofert container">
         <div class="ofert-1">
             <div class="ofert-img">
@@ -90,7 +124,10 @@
             </div>
         </div>
     </section>
+    -->
 
+    <!-- ESTO ERA EL MAIN VIEJO QUE SE VA A IR A LA PAGINA DE PRODUCTOS!! -->
+    <!--
     <main class="products container" id="lista-1">
         <h2>Productos</h2>
         <div class="product-content">
@@ -157,7 +194,32 @@
 
         </div>
     </main>
-
+    -->
+    <!-- ESTO ERA EL MAIN VIEJO QUE SE VA A IR A LA PAGINA DE PRODUCTOS!! -->
+    <!-- ESTO ES EL NUEVO MAIN QUE VA A SER UNA SECTION DONDE CONTENGA UN POCO DE TEXTO SOBRE LA MARCA -->
+    <main class="contenedor-main">
+        <h2>Sobre Nosotros</h2>
+        <div class="contenedor-info">
+          <div class="info-textos">
+            <h3>Nuestros Inicios</h3>
+            <p>Fundados en el año 2000, comenzamos como un pequeño local especializado en alfombras artesanales, con una visión clara: ofrecer piezas únicas que transformen los espacios de nuestros clientes.</p>
+    
+            <h3>Visión</h3>
+            <p>Nuestra visión es ser el referente principal en el mercado de alfombras, destacándonos por la calidad, el diseño innovador y la experiencia al cliente, transformando hogares y oficinas en lugares acogedores y llenos de estilo.</p>
+    
+            <h3>Misión</h3>
+            <p>Nuestra misión es ofrecer productos que combinen calidad y diseño a precios accesibles, brindando a nuestros clientes una experiencia de compra personalizada y satisfactoria.</p>
+    
+            <h3>Valores</h3>
+            <p>Nos regimos por los valores de honestidad, calidad, innovación y compromiso con nuestros clientes. Creemos que cada espacio merece una alfombra que refleje su estilo y esencia.</p>
+          </div>
+          <div class="info-imagen">
+            <img src="/img/Modelos-Abstractos/Alfombra-Corazon.jpg" alt="Imagen Informativa">
+          </div>
+        </div>
+      </main>
+    <!-- ESTO ES EL NUEVO MAIN QUE VA A SER UNA SECTION DONDE CONTENGA UN POCO DE TEXTO SOBRE LA MARCA -->
+<!--    Otra section!!       -->
     <section class="icons container">
         <div class="icon-1">
             <div class="icon-img">
