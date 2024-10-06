@@ -472,27 +472,11 @@ header .fa-bars {
 .footer .box-container .box img{
     margin-top: 1rem;
 }
-
 /* Aca finaliza el FOOTER */
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* ###################################################################################################################### */
 
 /* MEDIA QUERIES */
 
@@ -568,7 +552,4 @@ header .fa-bars {
     .heading {
         font-size: 3rem;
     }
-
-
-
 }
