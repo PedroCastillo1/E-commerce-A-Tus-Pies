@@ -27,14 +27,14 @@ section {
 .heading {
     text-align: center;
     font-size: 4rem;
-    color: #333;
+    color: var(--pink);
     padding: 1rem;
     margin: 2rem 0;
     background: rgba(255, 51, 153, .05);
 }
 
 .heading span{
-    color: var(--pink);
+    color: #333;
 }
 
 
