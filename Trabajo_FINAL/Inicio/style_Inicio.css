@@ -118,7 +118,7 @@ header .fa-bars {
     display: flex;
     align-items: center;
     min-height: 100vh;
-    background:url(/Trabajo_FINAL/img/Alfombras-interiores/Alfombra-Escudo-Equipo.jpg) no-repeat;
+    background:url(../img/Alfombras-interiores/Alfombra-Escudo-Equipo.jpg) no-repeat;
     background-size: cover;
     background-position: center;
 }
