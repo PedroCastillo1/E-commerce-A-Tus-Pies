@@ -113,6 +113,10 @@ header .fa-bars {
 }
 /* Aca finaliza el HEADER */
 
+#review {
+    margin-top: 8rem;
+}
+
 /* Aca comienza el RESENIA */
 .review {
     margin-top: 5rem;
@@ -179,6 +183,11 @@ header .fa-bars {
 /* Aca finaliza el RESENIA */
 
 /* Aca comienza el FOOTER */
+
+.footer {
+    margin-top: 10rem;
+}
+
 
 .footer .box-container {
     display: flex;
