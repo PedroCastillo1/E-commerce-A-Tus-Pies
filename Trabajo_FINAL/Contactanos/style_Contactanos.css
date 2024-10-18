@@ -114,6 +114,10 @@ header .fa-bars {
 /* Aca finaliza el HEADER */
 
 /* Aca comienza el CONTACTOS */
+.contact {
+    margin-top: 5rem;
+}
+
 .contact .row {
     display: flex;
     flex-wrap: wrap-reverse;

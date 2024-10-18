@@ -114,6 +114,10 @@ header .fa-bars {
 /* Aca finaliza el HEADER */
 
 /* Aca comienza el RESENIA */
+.review {
+    margin-top: 5rem;
+}
+
 .review .box-container {
     display: flex;
     flex-wrap: wrap;
