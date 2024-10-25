@@ -86,17 +86,29 @@ header .navbar a:hover {
     color: var(--pink);
 }
 
+
+header .icons a {
+    font-size: 2.5rem;
+    color: #333;
+    margin-left: 1.5rem;
+}
+
+header .icons a:hover {
+    color: var(--pink);
+}
+
+
 header #toggler {
     display: none;
 }
 
-header .fa-bars {
+header .Menu_barrita {
     font-size: 3rem;
     color: #333;
     border-radius: .5rem;
-    padding: .5rem 1.5rem;
+    padding: .5rem .5rem;
     cursor: pointer;
-    border: 1rem solid rgba(0, 0, 0, .3);
+
     display: none;
 }
 
@@ -111,11 +123,6 @@ header .nav_icon {
     margin-left: 1rem;
     transition: color 0.2s linear;
 }
-
-header .nav_icon:hover {
-    color: var(--pink);
-}
-    
 
 /* Aca finaliza el HEADER */
 
@@ -281,8 +288,16 @@ header .nav_icon:hover {
 
 @media (max-width:768px) {
 
-    header .fa-bars {
+    header .Menu_barrita{
         display: block;
+    }
+
+    label img {
+        width: 50%;
+    }
+
+    label .Menu_barrita {
+        width: 5%;
     }
 
     header .navbar {
