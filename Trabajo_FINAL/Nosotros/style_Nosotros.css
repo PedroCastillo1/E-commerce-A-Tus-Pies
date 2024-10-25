@@ -220,6 +220,7 @@ header .nav_icon {
     display: flex;
     flex-wrap: wrap;
     gap: 1.5rem;
+    margin-left: 5%;
 }
 
 .footer .box-container .box{
@@ -246,6 +247,7 @@ header .nav_icon {
 
 .footer .box-container .box img{
     margin-top: 1rem;
+    width: 100px;
 }
 /* Aca finaliza el FOOTER */
 
