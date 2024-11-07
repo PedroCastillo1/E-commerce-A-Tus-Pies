@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A TUS PIES</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-    <link rel="stylesheet" href="../Contactanos/style_Contactanos.css">
+    <title>Favoritos</title>
+    <link rel="stylesheet" href="../Favoritos/favoritosStyle.css">
+    <script src="../Favoritos/favoritos.js"></script>
 </head>
 <body>
     <!-- Aca comienza el header de la pagina -->
@@ -13,7 +13,6 @@
         <!-- ESTO ES LAS 3 BARRITAS PARA EL MENU DE HAMBURGUESAS PARA APP MOVIL  -->
         <input type="checkbox" name="" id="toggler">
         <label for="toggler" class="Menu_barrita"><img src="../img/Iconos/Menu.png"></label>
-
 
         <!-- esto es el logo de la pagina  -->
         <a href="../Inicio/Inicio.html" class="logo"> A TUS PIES <span>.</span></a>
@@ -35,25 +34,30 @@
     </header>
     <!-- Aca finaliza el header de la pagina -->
 
-    <!-- Aca comienza el CONTACTOS de la pagina-->
-    <section class="contact" id="contact">
-        <h1 class="heading"> <span> Contactanos </span> . </h1>
-        <div class="row">
-            <form id="contactForm">
-                <input type="text" placeholder="Nombre" class="box">
-                <input type="email" placeholder="email" class="box">
-                <input type="number" placeholder="Numero" class="box">
-                <textarea name="" class="box" placeholder="Mensaje" id="" cols="30" rows="10"></textarea>
-                <input type="submit" value="Enviar Mensaje" class="btn">
-            </form>
-
-            <div class="image">
-                <img src="../img/Modelos-Abstractos/Alfombra-Ola-Kanagawa.jpg" alt="">
-            </div>
-
-        </div>
-     </section>
-    <!-- Aca finaliza el CONTACTOS de la pagina-->
+    <main class="main">
+        <h1>Tus Favoritos</h1>
+        <table class="table">
+            <tr> <td> Imagen </td> <td> Nombre </td> <td> Precio </td> <td> Descartar</td> </tr>
+            <tr>  
+                <td> <img class="image" src="../img/Alfombras-interiores/Alfombra-de-Corazones.jpg" alt="imagen"></td>
+                <td>Alfombra de Corazones</td>
+                <td>1000$</td>
+                <td><button class="button delete" onclick="deleteRow(this)">Quitar de Favoritos</button></td>
+            </tr>
+            <tr>
+                <td> <img class="image" src="../img/Alfombras-interiores/Alfombra-Abstracta.jpg" alt="imagen"></td>
+                <td>Alfombra Abstracta</td>
+                <td>1000$</td>
+                <td><button class="button delete" onclick="deleteRow(this)">Quitar de Favoritos</button></td>
+            </tr>
+            <tr>
+                <td> <img class="image" src="../img/Alfombras-interiores/Alfombra-Arcoiris.jpg" alt="imagen"></td>
+                <td>Alfombra Arcoiris</td>
+                <td>1200$</td>
+                <td><button class="button delete" onclick="deleteRow(this)">Quitar de Favoritos</button></td>
+            </tr>
+        </table>
+    </main>
 
     <!-- Aca comienza el FOOTER de la pagina-->
     <section class="footer">
@@ -85,22 +89,5 @@
         </div>
     </section>
     <!-- Aca finaliza el FOOTER de la pagina-->
-    
-    <script>
-        document.getElementById('contactForm').addEventListener('submit', function(event) {
-            event.preventDefault();
-            const nombre = this.querySelector('input[placeholder="Nombre"]').value;
-            const email = this.querySelector('input[placeholder="email"]').value;
-            const numero = this.querySelector('input[placeholder="Numero"]').value;
-            const mensaje = this.querySelector('textarea[placeholder="Mensaje"]').value;
-
-            if (!nombre || !email || !numero || !mensaje) {
-                alert('Por favor, rellene todos los datos.');
-            } else {
-                alert('Mensaje enviado con éxito');
-                this.reset();
-            }
-        });
-    </script>
 </body>
 </html>
