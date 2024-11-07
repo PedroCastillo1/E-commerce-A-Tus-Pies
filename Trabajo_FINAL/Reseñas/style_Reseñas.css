@@ -197,11 +197,6 @@ header .nav_icon {
 
 /* Aca comienza el FOOTER */
 
-.footer {
-    margin-top: 10rem;
-}
-
-
 .footer .box-container {
     display: flex;
     flex-wrap: wrap;
@@ -226,6 +221,13 @@ header .nav_icon {
     padding: 1rem 0;
 }
 
+.footer .box-container .box p{
+    display: block;
+    color: #666;
+    font-size: 1.5rem;
+    padding: 1rem 0;
+}
+
 .footer .box-container .box a:hover{
     color: var(--pink);
     text-decoration: underline;
@@ -233,6 +235,7 @@ header .nav_icon {
 
 .footer .box-container .box img{
     margin-top: 1rem;
+    width: 100px;
 }
 /* Aca finaliza el FOOTER */
 

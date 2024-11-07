@@ -186,6 +186,13 @@ header .nav_icon {
     padding: 1rem 0;
 }
 
+.footer .box-container .box p{
+    display: block;
+    color: #666;
+    font-size: 1.5rem;
+    padding: 1rem 0;
+}
+
 .footer .box-container .box a:hover{
     color: var(--pink);
     text-decoration: underline;

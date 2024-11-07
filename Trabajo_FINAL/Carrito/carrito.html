@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Chango</title>
+        <link rel="stylesheet" href="../Carrito/carritoStyle.css">
+        <script src="../Carrito/carrito.js"></script>
+    </head>
+    <body>
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>A TUS PIES</title>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+            <link rel="stylesheet" href="../Inicio/style_Inicio.css">
+        </head>
+        <body>
+            <!-- Aca comienza el header de la pagina -->
+            <header>
+                <!-- ESTO ES LAS 3 BARRITAS PARA EL MENU DE HAMBURGUESAS PARA APP MOVIL  -->
+                <input type="checkbox" name="" id="toggler">
+                <label for="toggler" class="Menu_barrita"><img src="../img/Iconos/Menu.png"></label>
+        
+        
+                <!-- esto es el logo de la pagina  -->
+                <a href="../Inicio/Inicio.html" class="logo"> A TUS PIES <span>.</span></a>
+        
+                <!-- esto es la navegacion de la pagina de la pagina  -->
+                <nav class="navbar">
+                    <a href="../Inicio/Inicio.html">Inicio</a>
+                    <a href="../Nosotros/Nosotros.html">Nosotros</a>
+                    <a href="../Productos/Productos.html">Productos</a>
+                    <a href="../Reseñas/Reseñas.html">Reseñas</a>
+                    <a href="../Contactanos/Contactanos.html">Contactanos</a>
+                </nav>
+        
+                <!-- esto es los iconos del lado izquierdo de la pagina  -->
+                <div>
+                    <a href="#"><img src="../img/Iconos/Corazon.png" alt="heart icon" class="nav_icon"></a>
+                    <a href="../Carrito/carrito.html"><img src="../img/Iconos/Carrito.png" alt="cart icon" class="nav_icon"></a>
+                </div>
+            </header>
+        <main class="main">
+            <h1>Tu Carrito</h1>
+                <table class="table">
+                    <tr> <td> Imagen </td> <td> Nombre </td> <td> Cantidad </td> <td> Precio </td> <td> Descartar</td> </tr>
+                        <tr>  
+                            <td> <img class="image" src="../img/Alfombras-interiores/Alfombra-de-Corazones.jpg" alt="imagen"></td>
+                            <td>Alfombra de Corazones</td>
+                            <td>1</td>
+                            <td>1000$</td>
+                            <td><button class="button" onclick="deleteRow(this)">Borrar</button></td> <td><button class="button" onclick="buyItem(this)">Comprar</button></td>
+                        </tr>
+                        <tr>
+                            <td> <img class="image" src="../img/Alfombras-interiores/Alfombra-Abstracta.jpg" alt="imagen"></td>
+                            <td>Alfombra Abstracta</td>
+                            <td>1</td>
+                            <td>1000$</td>
+                            <td><button class="button" onclick="deleteRow(this)">Borrar</button></td> <td><button class="button" onclick="buyItem(this)">Comprar</button></td>
+                        </tr>
+                        <tr>
+                            <td> <img class="image" src="../img/Alfombras-interiores/Alfombra-Arcoiris.jpg" alt="imagen"></td>
+                            <td>Alfombra Arcoiris</td>
+                            <td>1</td>
+                            <td>1200$</td>
+                            <td><button class="button" onclick="deleteRow(this)">Borrar</button></td>
+                            <td><button class="button" onclick="buyItem(this)">Comprar</button></td>
+                        </tr>
+                </table>
+        </main>
+          <!-- Aca comienza el FOOTER de la pagina-->
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>Accesos rapidos</h3>
+                <a href="../Inicio/Inicio.html">Inicio</a>
+                <a href="../Nosotros/Nosotros.html">Nosotros</a>
+                <a href="../Productos/Productos.html">Productos</a>
+                <a href="../Reseñas/Reseñas.html">Reseñas</a>
+                <a href="../Contactanos/Contactanos.html">Contactanos</a>
+            </div>
+
+            <div class="box">
+                <h3>Nuestros locales</h3>
+                <p href="#">San telmo</p>
+                <p href="#">La Plata</p>
+                <p href="#">Sarandi</p>
+                <p href="#">Berazategui</p>
+            </div>
+
+            <div class="box">
+                <h3>Contactanos info</h3>
+                <p href="../Contactanos/Contactanos.html">+ 123-456-7890</p>
+                <p href="../Contactanos/Contactanos.html">example@gamil.com</p>
+                <p href="../Contactanos/Contactanos.html">avenida la corta - 1233</p>
+                <img src="../img/Iconos/metodos-pago.png" alt="">
+            </div>
+        </div>
+    </section>
+    <!-- Aca finaliza el FOOTER de la pagina-->
+    </body>
+    </html>
